@@ -44,6 +44,9 @@
         <a class="js-scroll-trigger" href="#services">Services</a>
       </li>
       <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#results">Results</a>
+      </li>
+      <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#news">News</a>
       </li>
       <li class="sidebar-nav-item">
@@ -80,12 +83,32 @@
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
+<!--
       <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Services</h3>
         <h2 class="mb-5">What We Offer</h2>
       </div>
+-->
       <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Dataset</strong>
+          </h4>
+          <p class="text-faded mb-0">Benckmarking datasets including road networks and traffic flow.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Method</strong>
+          </h4>
+          <p class="text-faded mb-0">Introducing the traffic signal control methods in a comprehensive way.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="icon-screen-smartphone"></i>
           </span>
@@ -93,33 +116,6 @@
             <strong>Simulator</strong>
           </h4>
           <p class="text-faded mb-0">Supporting multi-process, large-scale simulation</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Datasets</strong>
-          </h4>
-          <p class="text-faded mb-0">Benckmarking datasets including road networks and traffic flow.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Relevent Papers</strong>
-          </h4>
-          <p class="text-faded mb-0">Introduing published papers.</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Survey</strong>
-          </h4>
-          <p class="text-faded mb-0">Introducing the traffic signal control methods in a comprehensive way.</p>
         </div>
       </div>
     </div>
@@ -137,14 +133,70 @@
   </section>
 -->
 
-  <!-- Portfolio -->
-  <section class="content-section" id="news">
+  <section class="content-section " id="results">
     <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">News</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <div class="content-section-heading text-center ">
+        <h2 class="mb-5">Benchmarking Results</h2>
+        </div>
+        <div class="table-responsive" data-example-id="simple-table" style="overflow:scroll;">
+            <table class="table">
+              <caption>Optional table caption.</caption>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>First paper or data creator</th>
+                  <th>Time Span</th>
+                  <th>Arrival Rate ()</th>
+                  <th>Username</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
       </div>
-      <div class="row no-gutters">
+      <div class="content-section-heading text-center ">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">More datasets & results</a>
+     </div>
+  </div>
+</section>
+
+    
+    
+  <!-- Portfolio -->
+  <section class="content-section  bg-primary text-white text-center" id="news">
+    <div class="container">
+      <div class="content-section-heading text-white text-center ">
+        <h2 class="mb-5">News</h2>
+      </div>
+      <div class="row no-gutters text-white text-center">
+<!--
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
@@ -193,18 +245,19 @@
             <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
           </a>
         </div>
+-->
+              <p class="mb-0"><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p>
+              <p class="mb-0"><em>[KDD 2018]</em> IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</p>
       </div>
     </div>
   </section>
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">If you'd like to share more...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Contact us</a>
-      <a href="#" class="btn btn-xl btn-dark">Follow us </a>
-    </div>
+<!--
+  <section class="content-section ">
+    
   </section>
+-->
 
   <!-- Map -->
 <!--
@@ -220,27 +273,50 @@
   <!-- Footer -->
   <footer id="contact" class="footer text-center">
     <div class="container text-center">
-      <h2 class="mb-4">If you'd like to know more or share your knowledge...</h2>
-        <p class="mb-4">Contact us through the following</p>
-<!--      <a href="#" class="btn btn-xl btn-light mr-4">Contact us</a>-->
-<!--      <a href="#" class="btn btn-xl btn-dark">Follow us </a>-->
+       <div class="container text-center">
+      <h2 class="mb-4">Recommend Papers and Donate Datasets</h2>
     </div>
-      <p></p>
-      <p></p>
+    
+      
+      <div class="row">
+          <div class="col-lg-6 col-md-4 mb-3 mb-lg-0">
+          <h5>
+            <strong>Submit a Dataset</strong>
+          </h5>
+          <p class="mb-0">We are constantly looking to include as many datasets as we can. If you think you have suitable dataset please submit it here for review and we'll do our best to include it into the repository. If it is included we will reference you under the dataset source!</p>
+              <p></p>
+                <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Dataset%20Submission&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A"  class="btn btn-l btn-light mr-4">Submit</a>
+        </div>
+        <div class="col-lg-6 col-md-4 mb-3 mb-lg-0">
+              <h5>
+                <strong>Recommend a Paper</strong>
+              </h5>
+            <div class="caption-content">
+          
+                <p class="mb-0">If you have written a paper or know of a paper that you believe should be include in the repository please tell us! Click the button below to submit a review request. All included publications will be fully cited and added to the bibliography.</p>
+              <p></p>
+                <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Paper%20Recommendation&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A" class="btn btn-l btn-light">Request Addition</a>
+            </div>
+        </div>
+      </div>
+    </div>
+      
     <div class="container">
+        <p></p>
+        
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="mailto:intelligent.traffic.signal@gmail.com">
+            <i class="icon-envelope"></i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
+            <i class="icon-social-google"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
+          <a class="social-link rounded-circle text-white" href="https://github.com/traffic-signal-control">
             <i class="icon-social-github"></i>
           </a>
         </li>
