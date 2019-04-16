@@ -70,19 +70,20 @@
     
 <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <div class="col-lg-12 mx-auto">
-          <h2><font color="white">Benchmark dataset</font></h2>
-          <p class="breadcrumb-custom"><font color="white"><a href="index.html">Home</a> <span class="mx-2">&gt;</span> <span>Services</span> <span class="mx-2">&gt;</span> <span>Dataset</span></font> </p>
-          <p class="lead mb-10"><font color="white"><strong>Here we present different datasets for traffic signal control, each includes the following:</strong></font></p> 
-            <p></p>
-          <p class="mb-10"><font color="white">- road network setting</font></p>
-          <p></p>
-          <p class="mb-10"><font color="white">- traffic flow setting</font></p>
-         <p></p>
-          <p></p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#datasets">See details</a>
-        </div>
+          <div class="col-lg-12 mx-auto">
+              <h2><font color="white">Source Code</font></h2>
+              <p class="breadcrumb-custom"><font color="white"><a href="index.html">Home</a> <span class="mx-2">&gt;</span> <span>Services</span> <span class="mx-2">&gt;</span> <span>Survey</span></font> </p>
+              <p class="lead mb-10"><font color="white"><strong>Here we present a survey about traffic signal control, including:</strong></font></p> 
+                <p></p>
+              <p class="mb-10"><font color="white">- Conventional transportation approaches</font></p>
+              <p></p>
+              <p class="mb-10"><font color="white">- RL-based traffic signal control approaches</font></p>
+             <p></p>
+              <p></p>
+              <a class="btn btn-dark btn-xl js-scroll-trigger" href="#">See the survey</a>
+            </div>
     </div>
+        
   </header>
 
   <!-- About -->
@@ -103,122 +104,18 @@
 -->
 
 
-  <section class="content-section " id="datasets">
+<section class="content-section " id="methods">
     <div class="container">
         <div class="content-section-heading text-center ">
-        <h2 class="mb-5">List of datasets</h2>
+            <h2 class="mb-5">Structure of this survey</h2>
         </div>
-        <div class="caption-content">
-                <p>We provide different traffic datasets, each includes both road network (roadnet.json) and traffic flow file (flow.json), whose formats are defined in <a href="https://cityflow.readthedocs.io/en/latest/roadnet.html">Roadnet File Format</a> and <a href="https://cityflow.readthedocs.io/en/latest/flow.html">Flow File Format</a> respectively.</p>
-         </div>
+        <div class="col-xl-12 col-md-6 mb-4">
+          <div class="card border-5 shadow">
+            <img src="img/survey-structure.png" class="card-img-top" alt="...">
+          </div>
+        </div>
         
-        <div class="table-responsive" data-example-id="simple-table" style="overflow:scroll;">
-            <table class="table">
-<!--              <caption>List of method.</caption>-->
-              <thead>
-                <tr>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-baqh" colspan="4">Arrival rate (Vehicles/h)</th>
-              </tr>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Author/<br>Contributor</th>
-                  <th>Number of <br> Intersections</th>
-                  <th>Time Span<br>(Seconds)</th>
-                  <th>Mean</th>
-                  <th>Std</th>
-                  <th>Max</th>
-                  <th>Min</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_8_9_2231">hangzhou_bc_tyc_1h_8_9_2231</a></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>3600</td>
-                  <td>2231</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_kn_hz_1h_7_8_827">hangzhou_kn_hz_1h_7_8_827</a></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>3600</td>
-                  <td>827</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_10_11_2021">hangzhou_bc_tyc_1h_10_11_2021</a></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>3600</td>
-                  <td>2021</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                    
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_7_8_1848">hangzhou_bc_tyc_1h_7_8_1848</a></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>3600</td>
-                  <td>1848</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_sb_sx_1h_7_8_1671">hangzhou_sb_sx_1h_7_8_1671</a></td>
-                  <td></td>
-                  <td>1</td>
-                  <td>3600</td>
-                  <td>1671</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>LA</td>
-                  <td></td>
-                  <td>4</td>
-                  <td>2000</td>
-                  <td>2321</td>
-                  <td>2128</td>
-                  <td>5328</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Atlanta</td>
-                  <td></td>
-                  <td>5</td>
-                  <td>900</td>
-                  <td>3131</td>
-                  <td>656</td>
-                  <td>4664</td>
-                  <td>2328</td>
-                </tr>
-              </tbody>
-            </table>
-      </div>
-  </div>
+    </div>
 </section>
 
     
@@ -242,24 +139,17 @@
 
   <!-- Footer -->
   <footer id="contact" class="footer text-center">
-    <div class="container text-center">
-       <div class="container text-center">
-      <h2 class="mb-4">Donate Dataset</h2>
-    </div>
-    
-      
-      <div class="row">
-          <div class="col-lg-12 col-md-12 mb-12 mb-lg-12">
-              <h5>
-            <strong>Submit a Dataset</strong>
-          </h5>
-          <p class="mb-0">We are constantly looking to include as many datasets as we can. If you think you have suitable dataset please submit it here for review and we'll do our best to include it into the repository. If it is included we will reference you under the dataset source!</p>
-              <p></p>
-                <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Dataset%20Submission&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A"  class="btn btn-l btn-light mr-4">Submit</a>
+      <div class="col-lg-6 mt-5 mx-auto">
+                <h3>Suggestions to this survey</h3>
+                <div class="caption-content">
+                    <p class="mb-0">We are still actively enriching this survey and hopes to enhence its comprehensiveness. </p>
+                    <p class="mb-0">If you have written a paper or know of a paper that you believe should be include in the survey please tell us! </p>
+                    <p class="mb-0">Click the button below to submit a review request. All included publications will be fully cited and added to the bibliography.</p>
+                  <p></p>
+                    <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Paper%20Recommendation&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A" class="btn btn-l btn-light">Send your suggestions</a>
+                    </div>
+
             </div>
-        </div>
-    </div>
-      
     <div class="container">
         <p></p>
         
