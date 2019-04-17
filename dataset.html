@@ -26,9 +26,9 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Traffic Signal Control Benchmark</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Traffic Signal Control Benchmark</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,21 +38,16 @@
                 <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="dataset.html">Dataset</a>
               </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                  <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
-                  <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index.html#services">Service Info</a>  
-                      <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="dataset.html">Dataset</a>
-                    <a class="dropdown-item" href="survey.html">Survey</a>
-                    <a class="dropdown-item" href="code.html">Source code</a>
-                    <a class="dropdown-item" href="https://cityflow-project.github.io">Simulator</a>
-                  </div>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="code.html">Source code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="https://cityflow-project.github.io">Simulator</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="index.html#results">Results</a>
@@ -113,112 +108,217 @@
          </div>
         
         <div class="table-responsive" data-example-id="simple-table" style="overflow:scroll;">
+            
             <table class="table">
-<!--              <caption>List of method.</caption>-->
+            <!--              <caption>List of method.</caption>-->
               <thead>
                 <tr>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-0lax"></th>
-                <th class="tg-baqh" colspan="4">Arrival rate (Vehicles/h)</th>
-              </tr>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Author/<br>Contributor</th>
-                  <th>Number of <br> Intersections</th>
-                  <th>Time Span<br>(Seconds)</th>
-                  <th>Mean</th>
-                  <th>Std</th>
-                  <th>Max</th>
-                  <th>Min</th>
-                </tr>
+                    <th>#</th>
+                    <th>Dataset name</th>
+                    <th><br>Number of<br>Intersections<br></th>
+                    <th>Time Span<br>(Seconds)</th>
+                    <th>Description</th>
+                    <th>Best result</th>
+                    <th>Best method</th>
+                  </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_8_9_2231">hangzhou_bc_tyc_1h_8_9_2231</a></td>
-                  <td></td>
+                <tbody>
+                  <tr>
+                    <td >&nbsp;</td>
+                    <td><a
+              href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_bc-tyc_18041607_1h"><span>hangzhou_1x1_bc-tyc_18041607_1h</span></a></td>
+                    <td>1</td>
+                    <td>3600</td>
+                    <td rowspan="11">These datasets are based on camera data in Hangzhou. <br>Due to the lack of records about turning vehicles, the turning ratios of each dataset are fixed, with 10% as turning left, 60% as going straight, and 30% as turning right. The turning-right vehicles are discarded since they are not under the control of traffic lights. <br> There are one left-turn lane and one straight lane in each direction in each roadnet.</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_bc-tyc_18041608_1h"><span>hangzhou_1x1_bc-tyc_18041608_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
-                  <td>2231</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_kn_hz_1h_7_8_827">hangzhou_kn_hz_1h_7_8_827</a></td>
-                  <td></td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td>
+                      <a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_bc-tyc_18041610_1h"><span >hangzhou_1x1_bc-tyc_18041610_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
-                  <td>827</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_10_11_2021">hangzhou_bc_tyc_1h_10_11_2021</a></td>
-                  <td></td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_kn-hz_18041607_1h"><span>hangzhou_1x1_kn-hz_18041607_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
-                  <td>2021</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                    
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_bc_tyc_1h_7_8_1848">hangzhou_bc_tyc_1h_7_8_1848</a></td>
-                  <td></td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_kn-hz_18041608_1h"><span>hangzhou_1x1_kn-hz_18041608_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
-                  <td>1848</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_sb_sx_1h_7_8_1671">hangzhou_sb_sx_1h_7_8_1671</a></td>
-                  <td></td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_qc-yn_18041607_1h"><span>hangzhou_1x1_qc-yn_18041607_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
-                  <td>1671</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>LA</td>
-                  <td></td>
-                  <td>4</td>
-                  <td>2000</td>
-                  <td>2321</td>
-                  <td>2128</td>
-                  <td>5328</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Atlanta</td>
-                  <td></td>
-                  <td>5</td>
-                  <td>900</td>
-                  <td>3131</td>
-                  <td>656</td>
-                  <td>4664</td>
-                  <td>2328</td>
-                </tr>
-              </tbody>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_qc-yn_18041608_1h"><span>hangzhou_1x1_qc-yn_18041608_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_sb-sx_18041607_1h"><span>hangzhou_1x1_sb-sx_18041607_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_sb-sx_18041608_1h"><span>hangzhou_1x1_sb-sx_18041608_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_tms-xy_18041607_1h"><span>hangzhou_1x1_tms-xy_18041607_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_tms-xy_18041608_1h"><span>hangzhou_1x1_tms-xy_18041608_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x1_dynamic_1052_1h"><span>syn_1x1_dynamic_1052_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td rowspan="2">These datasets are generated artificially based on the rule obtained from the analysis of real traffic flows. The number in the name of the dataset is the total numbers of vehicles.</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x1_dynamic_2145_1h"><span>syn_1x1_dynamic_2145_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td> 
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x1_uniform_200_1h"><span>syn_1x1_uniform_200_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td rowspan="3">These datasets are generated artificially. The vehicles enter the road network uniformly with a fixed entering ratio chosen from 200, 400 and 600 vehicles per hour.</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td> 
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x1_uniform_400_1h"><span>syn_1x1_uniform_400_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td> 
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x1_uniform_600_1h"><span>syn_1x1_uniform_600_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td> 
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_4x4_gudang_18010207_1h"><span>hangzhou_4x4_gudang_18010207_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >This dataset is based on camera data in Hangzhou. Necessary simplification is done due to the low quality of the real-world data.
+                      <br> • Traffic volume: the traffic volume is derived from camera data at Hangzhou. <br> • Turning ratio: 10% (turning left), 60%(going straight) and 30% (turning right). This is synthesized from the statistics of taxi GPS data.
+                  </td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td> 
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x3_gaussian_500_1h"><span>syn_1x3_gaussian_500_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td rowspan="4">
+                      • Traffic volume: All the vehicles enter and leave the network from the rim edges.For each entering edge, the number of the vehicles generated is sampled from a Gaussian distribution with mean as 500 vehicles/hour/lane. <br>
+                      • Turning ratio: 10% (turning left), 60%(going straight) and 30% (turning right)
+                     </td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_2x2_gaussian_500_1h"><span>syn_2x2_gaussian_500_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_3x3_gaussian_500_1h"><span>syn_3x3_gaussian_500_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                 <tr height=30 ><td >&nbsp;</td>  
+                  <td><a
+                  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_4x4_gaussian_500_1h"><span>syn_4x4_gaussian_500_1h</span></a></td>
+                  <td>1</td>
+                  <td>3600</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                  <td >&nbsp;</td>
+                 </tr>
+                </tbody>
             </table>
-      </div>
-  </div>
+            
+        </div>
+    </div>
 </section>
 
     
