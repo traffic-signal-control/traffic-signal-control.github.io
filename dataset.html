@@ -118,8 +118,8 @@
                     <th><br>Number of<br>Intersections<br></th>
                     <th>Time Span<br>(Seconds)</th>
                     <th>Description</th>
-                    <th>Best result</th>
-                    <th>Best method</th>
+                    <th>Referred result</th>
+                    <th>Referred method</th>
                   </tr>
               </thead>
                 <tbody>
@@ -267,9 +267,10 @@
                  <tr height=30 ><td >&nbsp;</td> 
                   <td><a
                   href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_4x4_gudang_18010207_1h"><span>hangzhou_4x4_gudang_18010207_1h</span></a></td>
-                  <td>1</td>
+                  <td>16</td>
                   <td>3600</td>
-                  <td >This dataset is based on camera data in Hangzhou. Necessary simplification is done due to the low quality of the real-world data.
+                  <td > The road network contains 16 intersections in a 4x4 grid. Each intersection has four incoming approaches and four outgping approaches, and each approach has three lanes (left-turn, through and right-turn respectively).
+                      <br>The traffic flow data is based on camera data in Hangzhou. Necessary simplification is done due to the low quality of the real-world data.
                       <br> • Traffic volume: the traffic volume is derived from camera data at Hangzhou. <br> • Turning ratio: 10% (turning left), 60%(going straight) and 30% (turning right). This is synthesized from the statistics of taxi GPS data.
                   </td>
                   <td >&nbsp;</td>
@@ -278,9 +279,10 @@
                  <tr height=30 ><td >&nbsp;</td> 
                   <td><a
                   href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_1x3_gaussian_500_1h"><span>syn_1x3_gaussian_500_1h</span></a></td>
-                  <td>1</td>
+                  <td>3</td>
                   <td>3600</td>
-                  <td rowspan="4">
+                  <td rowspan="4">The road network contains 16 intersections in a 4x4 grid. Each intersection has four incoming approaches and four outgping approaches, and each approach has three lanes (left-turn, through and right-turn respectively).
+                      <br>
                       • Traffic volume: All the vehicles enter and leave the network from the rim edges.For each entering edge, the number of the vehicles generated is sampled from a Gaussian distribution with mean as 500 vehicles/hour/lane. <br>
                       • Turning ratio: 10% (turning left), 60%(going straight) and 30% (turning right)
                      </td>
@@ -290,7 +292,7 @@
                  <tr height=30 ><td >&nbsp;</td>
                   <td><a
                   href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_2x2_gaussian_500_1h"><span>syn_2x2_gaussian_500_1h</span></a></td>
-                  <td>1</td>
+                  <td>4</td>
                   <td>3600</td>
                   <td >&nbsp;</td>
                   <td >&nbsp;</td>
@@ -299,7 +301,7 @@
                  <tr height=30 ><td >&nbsp;</td>  
                   <td><a
                   href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_3x3_gaussian_500_1h"><span>syn_3x3_gaussian_500_1h</span></a></td>
-                  <td>1</td>
+                  <td>9</td>
                   <td>3600</td>
                   <td >&nbsp;</td>
                   <td >&nbsp;</td>
@@ -308,7 +310,7 @@
                  <tr height=30 ><td >&nbsp;</td>  
                   <td><a
                   href="https://github.com/traffic-signal-control/sample-code/tree/master/data/syn_4x4_gaussian_500_1h"><span>syn_4x4_gaussian_500_1h</span></a></td>
-                  <td>1</td>
+                  <td>16</td>
                   <td>3600</td>
                   <td >&nbsp;</td>
                   <td >&nbsp;</td>
@@ -344,16 +346,14 @@
   <footer id="contact" class="footer text-center">
     <div class="container text-center">
        <div class="container text-center">
-      <h2 class="mb-4">Donate Dataset</h2>
+      <h2 class="mb-4">Submit a Dataset</h2>
     </div>
     
       
       <div class="row">
           <div class="col-lg-12 col-md-12 mb-12 mb-lg-12">
-              <h5>
-            <strong>Submit a Dataset</strong>
-          </h5>
-          <p class="mb-0">We are constantly looking to include as many datasets as we can. If you think you have suitable dataset please submit it here for review and we'll do our best to include it into the repository. If it is included we will reference you under the dataset source!</p>
+          <p class="mb-0">We are constantly looking to include as many datasets as we can.</p> 
+            <p class="mb-0">If you think you have suitable dataset, please submit it here for review and we'll do our best to include it into the repository. If it is included we will reference you under the dataset source!</p>
               <p></p>
                 <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Dataset%20Submission&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A"  class="btn btn-l btn-light mr-4">Submit</a>
             </div>
