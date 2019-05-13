@@ -72,12 +72,8 @@
       <div class="col-lg-12 mx-auto">
           <h2><font color="white">Benchmark dataset</font></h2>
           
-          <p class="lead mb-10"><font color="white"><strong>Here we present different datasets for traffic signal control, each includes the following:</strong></font></p> 
+          <p class="lead mb-10"><font color="white"><strong><p>The performance of traffic signal control strategies could be largely influenced by  simulation environment, road network setting and traffic flow setting. Hence, we provide benchmark datasets including road network and traffic flow data, and provide benchmarking results for referecence. </strong></font></p> 
             <p></p>
-          <p class="mb-10"><font color="white">- road network setting</font></p>
-          <p></p>
-          <p class="mb-10"><font color="white">- traffic flow setting</font></p>
-         <p></p>
           <p></p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#datasets">See details</a>
         </div>
@@ -114,6 +110,7 @@
         <div class="table-responsive" data-example-id="simple-table" style="overflow:scroll;">
             
             <table class="table">
+                <caption>*All methods are measured in <a href="https://traffic-signal-control.github.io/TSCC2019/evaluation.html"> Average Travel Time</a> (in seconds) under <a href="https://cityflow-project.github.io/"> CityFlow</a> simulator.</caption>
             <!--              <caption>List of method.</caption>-->
               <thead>
                 <tr>
@@ -122,7 +119,7 @@
                     <th><br>Number of<br>Intersections<br></th>
                     <th>Time Span<br>(Seconds)</th>
                     <th>Description</th>
-                    <th>Referred result</th>
+                    <th>Referred result*</th>
                     <th>Referred method</th>
                   </tr>
               </thead>
@@ -135,14 +132,14 @@
                     <td>3600</td>
                     <td rowspan="11">These datasets are based on camera data in Hangzhou. <br>Due to the lack of records about turning vehicles, the turning ratios of each dataset are fixed, with 10% as turning left, 60% as going straight, and 30% as turning right. The turning-right vehicles are discarded since they are not under the control of traffic lights. <br> There are one left-turn lane and one straight lane in each direction in each roadnet.</td>
                     <td >221.03</td>
-                    <td >SOTL</td>
+                      <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                 </tr>
                  <tr height=30 ><td ></td>  
                   <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_bc-tyc_18041608_1h"><span>hangzhou_1x1_bc-tyc_18041608_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
                   <td >334.72</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td>
@@ -150,28 +147,28 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >213.20</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_kn-hz_18041607_1h"><span>hangzhou_1x1_kn-hz_18041607_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
                   <td >72.48</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_kn-hz_18041608_1h"><span>hangzhou_1x1_kn-hz_18041608_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
                   <td >64.10</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a  href="https://github.com/traffic-signal-control/sample-code/tree/master/data/hangzhou_1x1_qc-yn_18041607_1h"><span>hangzhou_1x1_qc-yn_18041607_1h</span></a></td>
                   <td>1</td>
                   <td>3600</td>
                   <td >117.24</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a
@@ -179,7 +176,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >131.99</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a
@@ -187,7 +184,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >173.85</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a
@@ -195,7 +192,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >290.00</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a
@@ -203,7 +200,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >214.77 </td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td>  
                   <td><a
@@ -211,7 +208,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >325.32</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td> 
                   <td><a
@@ -220,7 +217,7 @@
                   <td>3600</td>
                   <td rowspan="3">These datasets are generated artificially. The vehicles enter the road network uniformly with a fixed entering ratio chosen from 200, 400 and 600 vehicles per hour.</td>
                   <td > 61.44</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td> 
                   <td><a
@@ -228,7 +225,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >133.40</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td> 
                   <td><a
@@ -236,7 +233,7 @@
                   <td>1</td>
                   <td>3600</td>
                   <td >189.11</td>
-                  <td >SOTL</td>
+                  <td ><a class="nav-link js-scroll-trigger" href="code.html#methods">SOTL</a></td>
                  </tr>
                  <tr height=30 ><td ></td> 
                   <td><a
