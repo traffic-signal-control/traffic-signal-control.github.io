@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Traffic Signal Control Benchmark</title>
+  <title>Reinforcement Learning for Traffic Signal Control</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Traffic Signal Control Benchmark</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Reinforcement Learning for Traffic Signal Control</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -69,9 +69,9 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1"><font color="white">Traffic Signal Control Benchmark</font></h1>
+      <h1 class="mb-1"><font color="white">Reinforcement Learning for Traffic Signal Control</font></h1>
       <h3 class="mb-5">
-        <em><font color="white">This website is an ongoing project to develop a comprehensive repository for research into traffic signal control.</font></em>
+        <em><font color="white">This website is an ongoing project to develop a comprehensive reference for research into traffic signal control.</font></em>
       </h3>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
@@ -79,6 +79,7 @@
   </header>
 
   <!-- About -->
+<!--
   <section class="content-section bg-light" id="about">
       
     <div class="container text-center">
@@ -98,6 +99,147 @@
               <p class="lead mb-5">This project hopes to facilitate this interdisciplinary research direction by offering comprehensive dataset, simulator, relevant papers and survey to anyone who may wish to start investigation or evaluate a new algorithm.</p>
             </div>
         </div>
+    </div>
+  </section>
+-->
+    
+    <section class="content-section bg-light" id="about">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>ABOUT</h5>
+                    <h1>Reinforcement Learning for Traffic Signal Control: Opportunities and Chanllenges</h1>
+                    <p class="lead mb-5">This project includes benchmarking dataset, simulator, relevant papers and survey. </p>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-lg-10 mx-auto">
+                  <p class="lead mb-5"></p>
+                  <p class="lead mb-5">With the surge of AI technology and increasingly available city data, governments and industries are now actively seeking solutions to improve the transportation system.</p>
+                  <p class="lead mb-5">At the same time, with the recent success in reinforcement learning techniques, we see an increasing interest in academia to use reinforcement learning to improve traffic signal control. However, the vast majority of papers tested only on a single artificial dataset created by the proposing authors themselves. What's more, most existing machine learning approaches tend to ignore classic transportation approaches. The proposed methods lack a theoretic ground and a good comparison with existing transportation approaches. Complicated machine learning techniques sometimes may not outperform simpler transportation approaches. </p>
+                  <p class="lead mb-5">This website hopes to facilitate this interdisciplinary research direction by offering comprehensive dataset, simulator, relevant papers and survey to anyone who may wish to start investigation or evaluate a new algorithm.</p>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-lg-12">
+                    <h3>Chanllenges and Possible Solutions</h3>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-lg-10 mx-auto">
+                    <h5>1. What's the obejective?</h5>
+                        <p class="mb-0"><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network</p>
+                        <p class="mb-0"><em>[arXiv:1905.04716]</em> Diagnosing Reinforcement Learning for Traffic Signal Control</p>
+                        <p class="mb-0"><em>[KDD 2018]</em> IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</p> 
+                    <h5 >2. How to learn better?</h5>
+
+                        <p class="mb-0"><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</p>
+                        <p class="mb-0"><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</p>
+                        <p class="mb-0"><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</p>
+                    <h5>3. How to apply to real-world scenario?</h4>
+                        <p class="mb-0"><em>[ICDE 2020]</em> Imitation Learning for Real-Like Traffic Simulation</p>
+                        <p class="mb-0"><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="content-section  bg-primary text-white text-center" id="news">
+    <div class="container text-center">
+      <div class="content-section-heading text-white text-center ">
+        <h2 class="mb-5">News</h2>
+      </div>
+      <div class="row no-gutters text-white text-center">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-FRAP.pdf">
+            <span class="caption">
+              <span class="caption-content">
+                <h2><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</h2>
+                <p class="mb-0">In this paper, we propose a novel design based on the intuitive principle of phase competition in traffic signal control. Through the phase competition modeling, our model achieves invariance to symmetrical cases such as flipping and rotation in traffic flow.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/frap.PNG" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-colight.pdf">
+            <span class="caption">
+              <span class="caption-content">
+                <h2><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</h2>
+                <p class="mb-0">To enable cooperation of traffic signals, in this paper, we propose a model, CoLight, which can not only incorporate the temporal and spatial influences of neighboring intersections to the target intersection, but also build up index-free modeling of neighboring intersections.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/colight.PNG" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-demoLight.pdf">
+            <span class="caption">
+              <span class="caption-content">
+                <h2><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</h2>
+                  <p class="mb-0"> We propose DemoLight, to learn from demonstrations generated by traditional traffic signal control methods, in the similar way as people master a skill from expert knowledge. </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+          
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-KDD-presslight.pdf">
+            <span class="caption">
+              <span class="caption-content">
+                <h2><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</h2>
+                  <p class="mb-0"> To avoid the heuristic design of RL elements, we propose to connect RL with recent studies in transportation research. Our method is inspired by the state-of-the-art method max pressure in the transportation field. </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/presslight.png" alt="">
+          </a>
+        </div>
+          
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="/survey.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>A Survey on Traffic Signal Control Methods</h2>
+                <p class="mb-0">. With the growing interest in intelligent transportation using machine learning methods like reinforcement learning, this survey covers the widely acknowledged transportation approaches and a comprehensive list of recent literature on reinforcement for traffic signal control. </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+          
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://cityflow-project.github.io/">
+            <span class="caption">
+              <span class="caption-content">
+                <h2><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</h2>
+                <p class="mb-0">CityFlow is a new designed open-source traffic simulator, which is much faster than SUMO (Simulation of Urban Mobility). It can support flexible definitions for road network and traffic flow based on synthetic and real-world data. </p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/cityflow.png" alt="">
+          </a>
+        </div>
+    </div>
+        
+<!--
+         <div class="row">
+              <div class="col-lg-12 mx-aut text-center ">
+              <p class="mb-0"><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</p>
+                  
+              <p class="mb-0"><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</p>
+              
+              <p class="mb-0"><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</p>
+              
+              <p class="mb-0"><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</p>
+              
+              <p class="mb-0"><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p>
+              
+              <p class="mb-0"><em>[KDD 2018]</em> IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</p>
+              </div>
+          </div>
+-->
+      
     </div>
   </section>
 
@@ -248,103 +390,6 @@
     
     
   <!-- Portfolio -->
-  <section class="content-section  bg-primary text-white text-center" id="news">
-    <div class="container text-center">
-      <div class="content-section-heading text-white text-center ">
-        <h2 class="mb-5">News</h2>
-      </div>
-      <div class="row no-gutters text-white text-center">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-FRAP.pdf">
-            <span class="caption">
-              <span class="caption-content">
-                <h2><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</h2>
-                <p class="mb-0">In this paper, we propose a novel design based on the intuitive principle of phase competition in traffic signal control. Through the phase competition modeling, our model achieves invariance to symmetrical cases such as flipping and rotation in traffic flow.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/frap.PNG" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-colight.pdf">
-            <span class="caption">
-              <span class="caption-content">
-                <h2><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</h2>
-                <p class="mb-0">To enable cooperation of traffic signals, in this paper, we propose a model, CoLight, which can not only incorporate the temporal and spatial influences of neighboring intersections to the target intersection, but also build up index-free modeling of neighboring intersections.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/colight.PNG" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-demoLight.pdf">
-            <span class="caption">
-              <span class="caption-content">
-                <h2><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</h2>
-                  <p class="mb-0"> We propose DemoLight, to learn from demonstrations generated by traditional traffic signal control methods, in the similar way as people master a skill from expert knowledge. </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-          
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-KDD-presslight.pdf">
-            <span class="caption">
-              <span class="caption-content">
-                <h2><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</h2>
-                  <p class="mb-0"> To avoid the heuristic design of RL elements, we propose to connect RL with recent studies in transportation research. Our method is inspired by the state-of-the-art method max pressure in the transportation field. </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/presslight.png" alt="">
-          </a>
-        </div>
-          
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="/survey.html">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>A Survey on Traffic Signal Control Methods</h2>
-                <p class="mb-0">. With the growing interest in intelligent transportation using machine learning methods like reinforcement learning, this survey covers the widely acknowledged transportation approaches and a comprehensive list of recent literature on reinforcement for traffic signal control. </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-          
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://cityflow-project.github.io/">
-            <span class="caption">
-              <span class="caption-content">
-                <h2><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</h2>
-                <p class="mb-0">CityFlow is a new designed open-source traffic simulator, which is much faster than SUMO (Simulation of Urban Mobility). It can support flexible definitions for road network and traffic flow based on synthetic and real-world data. </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/cityflow.png" alt="">
-          </a>
-        </div>
-    </div>
-        
-<!--
-         <div class="row">
-              <div class="col-lg-12 mx-aut text-center ">
-              <p class="mb-0"><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</p>
-                  
-              <p class="mb-0"><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</p>
-              
-              <p class="mb-0"><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</p>
-              
-              <p class="mb-0"><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</p>
-              
-              <p class="mb-0"><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p>
-              
-              <p class="mb-0"><em>[KDD 2018]</em> IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</p>
-              </div>
-          </div>
--->
-      
-    </div>
-  </section>
 
   <!-- Call to Action -->
 <!--
