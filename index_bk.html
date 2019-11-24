@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reinforcement Learning for Traffic Signal Control</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Reinforcement Learning for Traffic Signal Control</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="dataset.html">Dataset</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="survey.html">Survey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="code.html">Source code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="https://cityflow-project.github.io">Simulator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#results">Results</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1"><font color="white">Reinforcement Learning for Traffic Signal Control</font></h1>
+      <h3 class="mb-5">
+        <em><font color="white">This website is an ongoing project to develop a comprehensive reference for research into traffic signal control.</font></em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+<!--
+  <section class="content-section bg-light" id="about">
+      
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h5>ABOUT</h5>
+                <h1>What is Traffic Signal Control Benchmark?</h1>
+                <p class="lead mb-5">This project includes benchmarking dataset, simulator, relevant papers and survey. </p>
+            </div>
+        </div>
+        
+        <div class="row text-left">
+            <div class="col-lg-10 mx-auto">
+              <p class="lead mb-5"></p>
+              <p class="lead mb-5">With the surge of AI technology and increasingly available city data, governments and industries are now actively seeking solutions to improve the transportation system.</p>
+              <p class="lead mb-5">At the same time, with the recent success in reinforcement learning techniques, we see an increasing interest in academia to use reinforcement learning to improve traffic signal control. However, the vast majority of papers tested only on a single artificial dataset created by the proposing authors themselves. What's more, most existing machine learning approaches tend to ignore classic transportation approaches. The proposed methods lack a theoretic ground and a good comparison with existing transportation approaches. Complicated machine learning techniques sometimes may not outperform simpler transportation approaches. </p>
+              <p class="lead mb-5">This project hopes to facilitate this interdisciplinary research direction by offering comprehensive dataset, simulator, relevant papers and survey to anyone who may wish to start investigation or evaluate a new algorithm.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+-->
+    
+    <section class="content-section bg-light" id="about">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>ABOUT</h5>
+                    <h1>Reinforcement Learning for Traffic Signal Control: Opportunities and Chanllenges</h1>
+                </div>
+            </div>
+                
+            <div class="col-lg-10 mx-auto">
+              <p class="lead mb-5"></p>
+              <p class="lead mb-5">With the surge of AI technology and increasingly available city data, governments and industries are now actively seeking solutions to improve the transportation system.</p>
+              <p class="lead mb-5">At the same time, with the recent success in reinforcement learning techniques, we see an increasing interest in academia to use reinforcement learning to improve traffic signal control. However, the vast majority of papers tested only on a single artificial dataset created by the proposing authors themselves. What's more, most existing machine learning approaches tend to ignore classic transportation approaches. The proposed methods lack a theoretic ground and a good comparison with existing transportation approaches. Complicated machine learning techniques sometimes may not outperform simpler transportation approaches. </p>
+              <p class="lead mb-5">This website hopes to facilitate this interdisciplinary research direction by offering comprehensive dataset, simulator, relevant papers and survey to anyone who may wish to start investigation or evaluate a new algorithm.</p>
+            
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-3">
+                    <h5>Chanllenges and Solutions</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-15">
+
+                    <div class="row text-left">
+                            <div class="col-lg-4">
+                                <a class="portfolio-item" href="#">
+                                    <span class="caption">
+                                    <span class="caption-content">
+                                    <h3 class="mb-1">Objective</h3>
+                                    <h2 class="mb-1">How to design reward?</h2>
+                                        <p class="mb-0"><em>[arXiv:1905.04722]</em> Queue length as reward for single intersection </p>
+                                        <p class="mb-0"><em>[KDD’19]</em> Pressure-based reward for arterial </p>
+                                    </span>
+                                    </span>
+                                    <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <a class="portfolio-item" href="#">
+                                <span class="caption">
+                                  <span class="caption-content">
+                                    <h3 class="mb-1">Learning</h3>
+                                    <h2 class="mb-1"> How to learn faster?</h2>
+                                      <p class="mb-0"><em>[CIKM’19a]</em> Learning phase competition</p>
+                                      <p class="mb-0"><em> [CIKM’19b]</em> Learning with graph attention</p>
+                                      <p class="mb-0"><em>[CIKM’19c]</em> Learning from demonstration </p>
+                                  </span>
+                                </span>
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <a class="portfolio-item" href="#">
+                                <span class="caption">
+                                  <span class="caption-content">
+                                    <h3 class="mb-1">Simulator</h3>
+                                    <h2 class="mb-1"> How to build a real simulator?</h2>
+                                      <p class="mb-0"><em>[WWW’19]</em> Efficient traffic simulator CityFlow</p>
+                                      <p class="mb-0"><em>[ICDE’20]</em> Learning to simulate car following model</p>
+                                  </span>
+                                </span>
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                              </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="row text-left">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <a href="https://arxiv.org/abs/1904.08117"><p class="mb-0 mt-3"><em>[arXiv:1904.08117]</em> Hua Wei, Guanjie Zheng, Vikash Gayah, and Zhenhui Li. A Survey on Traffic Signal Control Methods.</p></a>
+                    
+                    <a href="http://faculty.ist.psu.edu/jessieli/Publications/2018-KDD-IntelliLight.pdf"><p class="mb-0 mt-3"><em>[KDD’18]</em> Hua Wei, Guanjie Zheng, Huaxiu Yao, and Zhenhui Li, IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control </p></a>
+
+                    <a href="https://arxiv.org/abs/1905.04716"><p class="mb-0 mt-3"><em>[arXiv:1905.04716]</em> Guanjie Zheng, Xinshi Zang, Nan Xu, Hua Wei, Zhengyao Yu, Vikash Gayah, Kai Xu, and Zhenhui Li. Diagnosing Reinforcement Learning for Traffic Signal Control.</p></a>
+                    <a href="http://faculty.ist.psu.edu/jessieli/Publications/2019-KDD-presslight.pdf"><p class="mb-0"><em>[KDD'19]</em> Hua Wei, Chacha Chen, Guanjie Zheng, Kan Wu, Vikash V. Gayah, Kai Xu, and Zhenhui Li, PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network.</p></a>
+                    
+                    <a href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-FRAP.pdf"><p class="mb-0 mt-3"><em>[CIKM'19a]</em> Guanjie Zheng, Yuanhao Xiong, Xinshi Zang, Jie Feng, Hua Wei, Huichu Zhang, Yong Li, Kai Xu, and Zhenhui Li, Learning Phase Competition for Traffic Signal Control </p></a>
+                    <a  href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-colight.pdf"><p class="mb-0"><em>[CIKM'19b]</em> Hua Wei, Nan Xu, Huichu Zhang, Guanjie Zheng, Xinshi Zang, Chacha Chen, Weinan Zhang, Yanmin Zhu, Kai Xu, and Zhenhui Li, CoLight: Learning Network-level Cooperation for Traffic Signal Control </p></a>
+                    <a href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-demoLight.pdf"><p class="mb-0"><em>[CIKM'19c]</em> Yuanhao Xiong, Guanjie Zheng, Kai Xu and Zhenhui Li, Learning Traffic Signal Control from Demonstrations </p></a>
+                    
+                    <a href=""><p class="mb-0 mt-3"><em>[ICDE'20]</em> Guanjie Zheng, Hanyang Liu, and Zhenhui Li, Inverse Reinforcement Learning for Objective-centric Traffic Simulation </p></a>
+                    <a href="https://cityflow-project.github.io/"><p class="mb-0"><em>[WWW'19]</em> Huichu Zhang, Siyuan Feng, Chang Liu, Yaoyao Ding, Yichen Zhu, Zihan Zhou, Weinan Zhang, Yong Yu, Haiming Jin, and Zhenhui Li, CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p></a>
+
+                </div>
+            </div>
+        </div>
+  
+            
+        
+   </section>
+
+<!--
+    <section class="content-section  bg-primary text-white text-center" id="news">
+        <div class="container text-center">
+          <div class="content-section-heading text-white text-center ">
+            <h2 class="mb-5">News</h2>
+          </div>
+          <div class="row no-gutters text-white text-center">
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-FRAP.pdf">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</h2>
+                    <p class="mb-0">In this paper, we propose a novel design based on the intuitive principle of phase competition in traffic signal control. Through the phase competition modeling, our model achieves invariance to symmetrical cases such as flipping and rotation in traffic flow.</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/frap.PNG" alt="">
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-colight.pdf">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</h2>
+                    <p class="mb-0">To enable cooperation of traffic signals, in this paper, we propose a model, CoLight, which can not only incorporate the temporal and spatial influences of neighboring intersections to the target intersection, but also build up index-free modeling of neighboring intersections.</p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/colight.PNG" alt="">
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-CIKM-demoLight.pdf">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</h2>
+                      <p class="mb-0"> We propose DemoLight, to learn from demonstrations generated by traditional traffic signal control methods, in the similar way as people master a skill from expert knowledge. </p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="http://faculty.ist.psu.edu/jessieli/Publications/2019-KDD-presslight.pdf">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</h2>
+                      <p class="mb-0"> To avoid the heuristic design of RL elements, we propose to connect RL with recent studies in transportation research. Our method is inspired by the state-of-the-art method max pressure in the transportation field. </p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/presslight.png" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="/survey.html">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2>A Survey on Traffic Signal Control Methods</h2>
+                    <p class="mb-0">. With the growing interest in intelligent transportation using machine learning methods like reinforcement learning, this survey covers the widely acknowledged transportation approaches and a comprehensive list of recent literature on reinforcement for traffic signal control. </p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="https://cityflow-project.github.io/">
+                <span class="caption">
+                  <span class="caption-content">
+                    <h2><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</h2>
+                    <p class="mb-0">CityFlow is a new designed open-source traffic simulator, which is much faster than SUMO (Simulation of Urban Mobility). It can support flexible definitions for road network and traffic flow based on synthetic and real-world data. </p>
+                  </span>
+                </span>
+                <img class="img-fluid" src="img/cityflow.png" alt="">
+              </a>
+            </div>
+        </div>
+
+    
+             <div class="row">
+                  <div class="col-lg-12 mx-aut text-center ">
+                  <p class="mb-0"><em>[CIKM 2019]</em> Learning Phase Competition for Traffic Signal Control</p>
+
+                  <p class="mb-0"><em>[CIKM 2019]</em> CoLight: Learning Network-level Cooperation for Traffic Signal Control</p>
+
+                  <p class="mb-0"><em>[CIKM 2019]</em> Learning Traffic Signal Control from Demonstrations</p>
+
+                  <p class="mb-0"><em>[KDD 2019]</em> PressLight: Learning Max Pressure Control for Signalized Intersections in Arterial Network</p>
+
+                  <p class="mb-0"><em>[TheWebConf 2019]</em> CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</p>
+
+                  <p class="mb-0"><em>[KDD 2018]</em> IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</p>
+                  </div>
+              </div>
+    
+
+        </div>
+  </section>
+-->
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="mb-5">Resources</h2>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <a href="dataset.html">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="icon-docs"></i>
+              </span>
+          </a>
+          <h4>
+            <strong><font>Dataset</font></strong>
+          </h4>
+          <p class="text-faded mb-0">Benckmarking datasets including road networks and traffic flow.</p>
+        </div>
+          
+        <div class="col-lg-3 col-md-6">
+            <a href="/survey.html">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="icon-briefcase"></i>
+              </span>
+            </a>
+          <h4>
+            <strong><font>Survey</font></strong>
+          </h4>
+          <p class="text-faded mb-0">Introducing the traffic signal control methods in a comprehensive way.</p>
+        </div>
+          
+          
+        <div class="col-lg-3 col-md-6">
+            <a href="/method.html">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="icon-cloud-download"></i>
+              </span>
+            </a>
+          <h4>
+            <strong><font>Source code</font></strong>
+          </h4>
+          <p class="text-faded mb-0">Download source codes of traffic signal control methods.</p>
+        </div>
+          
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="https://cityflow-project.github.io">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <i class="icon-screen-smartphone"></i>
+              </span>
+            </a>
+          <h4>
+            <strong>Simulator</strong>
+          </h4>
+          <p class="text-faded mb-0">Supporting multi-process, large-scale simulation</p>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+<!--
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Welcome to
+        <em>your</em>
+        next website!</h2>
+      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+    </div>
+  </section>
+-->
+
+  <section class="content-section " id="results">
+    <div class="container">
+        <div class="content-section-heading text-center ">
+        <h2 class="mb-5">Benchmarking Results</h2>
+        </div>
+        <div class="table-responsive" data-example-id="simple-table" style="overflow:scroll;">
+            <table class="table">
+              <caption>All methods are measured in <a href="https://traffic-signal-control.github.io/TSCC2019/evaluation.html"> Average Travel Time</a> (in seconds).</caption>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Number of intersections</th>
+                  <th>Referred Result</th>
+                  <th>Refered method</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>hangzhou_1x1_bc-tyc_18041607_1h</td>
+                  <td> 1 </td>
+                  <td> 221.03 </td>
+                  <td>  SOTL </td>
+                    
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>hangzhou_1x1_bc-tyc_18041608_1h</td>
+                  <td> 1 </td>
+                  <td> 334.72 </td>
+                  <td> SOTL </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>hangzhou_1x1_bc-tyc_18041610_1h</td>
+                  <td> 1 </td>
+                  <td> 213.20 </td>
+                  <td> SOTL </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>hangzhou_1x1_kn-hz_18041607_1h</td>
+                  <td> 1 </td>
+                  <td>  72.48 </td>
+                  <td> SOTL </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">5</th>
+                  <td>hangzhou_1x1_kn-hz_18041608_1h</td>
+                  <td> 1 </td>
+                  <td> 64.10 </td>
+                  <td> SOTL  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">6</th>
+                  <td>hangzhou_4x4_gudang_18041610_1h</td>
+                  <td> 16 </td>
+                  <td> 240.97 </td>
+                  <td> MaxPressure </td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <div class="content-section-heading text-center ">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="dataset.html">More datasets & results</a>
+     </div>
+  </div>
+</section>
+
+    
+    
+  <!-- Portfolio -->
+
+  <!-- Call to Action -->
+<!--
+  <section class="content-section ">
+    
+  </section>
+-->
+
+  <!-- Map -->
+<!--
+  <section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+  </section>
+-->
+
+  <!-- Footer -->
+  <footer id="contact" class="footer text-center">
+    <div class="container text-center">
+       <div class="container text-center">
+      <h2 class="mb-4">Recommend Papers and Donate Datasets</h2>
+    </div>
+    
+      
+      <div class="row">
+          <div class="col-lg-6 col-md-4 mb-3 mb-lg-0">
+          <h5>
+            <strong>Submit a Dataset</strong>
+          </h5>
+          <p class="mb-0">We are constantly looking to include as many datasets as we can. If you think you have suitable dataset please submit it here for review and we'll do our best to include it into the repository. If it is included we will reference you under the dataset source!</p>
+              <p></p>
+                <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Dataset%20Submission&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A"  class="btn btn-l btn-light mr-4">Submit</a>
+        </div>
+        <div class="col-lg-6 col-md-4 mb-3 mb-lg-0">
+              <h5>
+                <strong>Recommend a Paper</strong>
+              </h5>
+            <div class="caption-content">
+          
+                <p class="mb-0">If you have written a paper or know of a paper that you believe should be include in the repository please tell us! Click the button below to submit a review request. All included publications will be fully cited and added to the bibliography.</p>
+              <p></p>
+                <a href="mailto:intelligent.traffic.signal@gmail.com?subject=Paper%20Recommendation&amp;body=Name%3A%0A%0AInstitution%3A%0A%0AMessage%3A%0A" class="btn btn-l btn-light">Request Addition</a>
+            </div>
+        </div>
+    </div>
+      
+    <div class="container">
+        <p></p>
+        
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="mailto:intelligent.traffic.signal@gmail.com">
+            <i class="icon-envelope"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-google"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/traffic-signal-control">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Traffic Signal Control Group | Wesbite developed by <a href="http://personal.psu.edu/hzw77/">Hua Wei</a> | Template by <a href="http://startbootstrap.com/">Smart Bootstrap</a></p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
