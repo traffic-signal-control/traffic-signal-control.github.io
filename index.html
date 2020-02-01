@@ -465,12 +465,39 @@
 <li><a href="#survey">A comprehensive survey</a></li>
 </ul>
 
+    <script language="JavaScript">
+        var allTypes = new Array('machine-learning', 'data-mining')
+        function showContentWithType(typeName) {
+            $(".publication").hide("slow");
+            $("." + typeName).show("slow");
+        }
+        function showAllPublication() {
+            $(".publication").show("slow");
+        }
+    </script>
+    
 <h2 id="#key-paper-list">Key paper list</h2>
+    
+    <div>
+        <span style="color: #000000; font-weight:bold;">
+        
+        <br>
+        Research Problems:
+        <a href="javascript:showAllPublication();">All papers</a><span>/</span>
+        <a href="javascript:showContentWithType('objective');">How to formulate an RL problem?</a><span>/</span>
+        <a href="javascript:showContentWithType('learning');">How to learn faster?</a><span>/</span>
+        <a href="javascript:showContentWithType('simulation');">How to build a real simulator?</a><span></span>
+        <br>
+        Constrol Scenarios:
+        <a href="javascript:showContentWithType('single');">Single intersection</a><span>/</span>
+        <a href="javascript:showContentWithType('multiple');">Multiple intersections</a><span></span>
+        </span>
+    </div>
 
 <div class="container w">
 		<div class="row centered">
 
-    <div class="app-social publication">
+    <div class="multiple learning publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -501,7 +528,7 @@
     <br>
     </div>
 
-    <div class="app-social publication">
+    <div class="multiple learning publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -533,7 +560,7 @@
     </div>
 
 
-    <div class="app-social publication">
+    <div class="objective multiple publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -565,7 +592,7 @@
     <br>
     </div>
             
-    <div class="app-social publication">
+    <div class="single learning publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -596,7 +623,7 @@
     <br>
     </div>
             
-    <div class="app-social publication">
+    <div class="single learning publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -626,7 +653,7 @@
     <br>
     </div>
             
-    <div class="app-social publication">
+    <div class="single learning publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -657,7 +684,7 @@
     <br>
     </div>
             
-    <div class="app-social publication">
+    <div class="single publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -688,7 +715,7 @@
     <br>
     </div>            
 
-    <div class="app-social publication">
+    <div class="simulation publication">
     <table style="width: 100%;" class="noBorder">
         <tbody class="noBorder">
             <tr class="noBorder">
@@ -710,6 +737,35 @@
                         </span>
                         <br>
                          CityFlow is an smilator which can support flexible definitions for road network and traffic flow based on synthetic and real-world data. It also provides user-friendly interface for reinforcement learning. Most importantly, CityFlow is more than twenty times faster than SUMO and is capable of supporting city-wide traffic simulation with an interactive render for monitoring. Besides traffic signal control, CityFlow could serve as the base for other transportation studies and can create new possibilities to test machine learning methods in the intelligent transportation domain.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+    
+    <div class="simulation publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/learn2sim.png"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="http://www.personal.psu.edu/~gjz5038/paper/icde2020_learn_sim/icde2020_learn_sim_paper.pdf"> Learning to Simulate Vehicle Trajectories from Demonstrations</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       ICDE'20</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Learning real-world vehicle behavior for a better simulator
+                        <span style="color: #87AFC7;"><br>
+                        </span>
+                        <br>
+                         Considering the complexity and nonlinearity of the real-world traffic, this paper unprecedentedly treat the problem of traffic simulation as a learning problem, and proposes learning to simulate  vehicle trajectory
                     </div>
                     <hr class="hrPost">
                 </td>
