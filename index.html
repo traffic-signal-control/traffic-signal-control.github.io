@@ -177,7 +177,8 @@
       margin-bottom: 0; }
 
   table {
-    padding: 0;border-collapse: collapse; }
+    padding: 0;border-collapse: collapse; border: none;
+    }
     table tr {
       border-top: 1px solid #cccccc;
       background-color: white;
@@ -198,10 +199,12 @@
         margin-top: 0; }
       table tr th :last-child, table tr td :last-child {
         margin-bottom: 0; }
-
   img {
     max-width: 100%; }
-
+    
+.noBorder {
+    border:none !important;
+}
   span.frame {
     display: block;
     overflow: hidden; }
@@ -464,8 +467,264 @@
 
 <h2 id="#key-paper-list">Key paper list</h2>
 
+<div class="container w">
+		<div class="row centered">
+
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/mplight.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://chacha-chen.github.io/files/chacha-AAAI2020.pdf">Toward A Thousand Lights: Decentralized Deep Reinforcement Learning for Large-Scale Traffic Signal Control</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       AAAI'20</span>
+                    
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> A combination of PressLight and FRAP
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://youtu.be/-UulnApXbjM">demo</a>]
+                        </span>
+                        <br>
+                        In this paper, we tackle the problem of multi-intersection traffic signal control, especially for large-scale networks, based on RL techniques and transportation theories. This problem is quite difficult because there are challenges such as scalability, signal coordination, data feasibility, etc. To address these challenges, we (1) design our RL agents utilizing ‘pressure’ concept to achieve signal coordination in region-level; (2) show that implicit coordination could be achieved by individual control agents with well-crafted reward design thus reducing the dimensionality; and (3) conduct extensive experiments on multiple scenarios, including a real-world scenario with 2510 traffic lights in Manhattan, New York City.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/colight.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://sites.psu.edu/huawei/2019/09/15/colight-cikm-2019/">CoLight: Learning Network-level Cooperation for Traffic Signal Control</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       CIKM'19</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Attention-based coordination
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/wingsweihua/colight">code</a>]
+                            [<a href="https://github.com/traffic-signal-control/RL_signals/blob/master/posters/CIKM19-colight-poster.pdf">poster</a>]
+                        </span>
+                        <br>
+                        To enable cooperation of traffic signals, in this paper, we propose a model, CoLight, which uses graph attentional networks to facilitate communication. Specifically, for a target intersection in a network, CoLight can not only incorporate the temporal and spatial influences of neighboring intersections to the target intersection, but also build up index-free modeling of neighboring intersections. To the best of our knowledge, we are the first to use graph attentional networks in the setting of reinforcement learning for traffic signal control and to conduct experiments on the large-scale road network with hundreds of traffic signals. 
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
 
 
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/presslight.gif"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                       <a href="https://sites.psu.edu/huawei/2019/06/17/presslight-kdd-2019/">PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       KDD'19</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Pressure-based coordination
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/wingsweihua/presslight">code</a>]
+                            [<a href="https://www.kdd.org/kdd2019/accepted-papers/view/presslight-learning-max-pressure-control-for-signalized-intersections-in-ar">demo</a>]
+                            [<a href="https://github.com/traffic-signal-control/RL_signals/blob/master/posters/KDD19-presslight-poster.pdf">poster</a>]
+                        </span>
+                        <br>
+                        To avoid the heuristic design of RL elements, we propose to connect RL with recent studies in transportation research. Our method is inspired by the state-of-the-art method max pressure (MP) in the transportation field. The reward design of our method is well supported by the theory in MP, which can be proved to be maximizing the throughput of the traffic network, i.e., minimizing the overall network travel time. We also show that our concise state representation can fully support the optimization of the proposed reward function. Through comprehensive experiments, we demonstrate that our method outperforms both conventional transportation approaches and existing learning-based methods.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+            
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/frap.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="http://www.personal.psu.edu/%7Egjz5038/paper/cikm2019_frap/cikm2019_frap_paper.pdf">Learning Phase Competition for Traffic Signal Control</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       CIKM'19</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Model the competition between pair of phases
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/gjzheng93/frap-pub">code</a>]
+                            [<a href="https://github.com/traffic-signal-control/RL_signals/blob/master/posters/cikm2019_frap.pdf">poster</a>]
+                        </span>
+                        <br>
+                        In this paper, we propose a novel design called FRAP, which is based on the intuitive principle of phase competition in traffic signal control: when two traffic signals conflict, priority should be given to one with larger traffic movement (i.e., higher demand). Through the phase competition modeling, our model achieves invariance to symmetrical cases such as flipping and rotation in traffic flow. By conducting comprehensive experiments, we demonstrate that our model finds better solutions than existing RL methods in the complicated all-phase selection problem, converges much faster during training, and achieves superior generalizability for different road structures and traffic conditions
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+            
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/metalight.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://uploads.strikinglycdn.com/files/f8450f43-19af-48ec-831a-bec87f1ec038/Metalight-AAAI-20.pdf">MetaLight: Value-based Meta-reinforcement Learning for Online Universal Traffic Signal Control</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       AAAI'20</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Meta learning for universal traffic signal control
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/zxsRambo/metalight">code</a>]
+                        </span>
+                        <br>
+                        In this paper, we propose a novel framework, named as MetaLight, to speed up the learning process in new scenarios by leveraging the knowledge learned from existing scenarios. MetaLight is a value-based metareinforcement learning workflow based on the representative gradient-based meta-learning algorithm (MAML), which includes periodically alternate individual-level adaptation and global-level adaptation. Moreover, MetaLight improves thestate-of-the-art reinforcement learning model FRAP in traffic signal control by optimizing its model structure and updating paradigm. 
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+            
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/demolight.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://dl.acm.org/citation.cfm?id=3357384.3358079">Learning Traffic Signal Control from Demonstrations</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       CIKM'19</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Learning from expert demonstrations
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/xyh97/DemoLight">code</a>]
+                            [<a href="https://github.com/traffic-signal-control/RL_signals/blob/master/posters/cikm-demolight.pdf">poster</a>]
+                        </span>
+                        <br>
+                         To avoid the prominent exploration problem in RL-based traffic signal control methods, we make an analogy between agents and humans. Agents can learn from demonstrations generated by traditional traffic signal control methods, in the similar way as people master a skill from expert knowledge. Therefore, we propose DemoLight, for the first time, to leverage demonstrations collected from  lassic methods to accelerate learning. Based on the state-of-the-art deep RL method Advantage ActorCritic (A2C), training with demos are carried out for both the actor and the critic and reinforcement learning is followed for further improvement.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+            
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/intellilight.PNG"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://www.kdd.org/kdd2018/accepted-papers/view/intellilight-a-reinforcement-learning-approach-for-intelligent-traffic-ligh">IntelliLight: A Reinforcement Learning Approach for Intelligent Traffic Light Control</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       KDD'18</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> First try on RL signal control. The base of all the methods
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://www.kdd.org/kdd2018/accepted-papers/view/intellilight-a-reinforcement-learning-approach-for-intelligent-traffic-ligh">demo</a>]
+                            [<a href="https://github.com/traffic-signal-control/RL_signals/blob/master/posters/KDD18-intelliLight.pdf">poster</a>]
+                        </span>
+                        <br>
+                        In this paper, we propose an effective deep reinforcement learning model for traffic light control and interpreted the policies. We test our method on a large-scale real traffic dataset obtained from surveillance cameras. We also show some interesting case studies of policies learned from the real data.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>            
+
+    <div class="app-social publication">
+    <table style="width: 100%;" class="noBorder">
+        <tbody class="noBorder">
+            <tr class="noBorder">
+                <td style="width: 30%" class="noBorder">
+                    <div class="imgHolder"><img src="img/cityflow.gif"></div>
+                </td> 
+                <td style="width: 70%" class="noBorder">
+                    <h4 class="fig-title">
+                        <a href="https://arxiv.org/abs/1905.05217">CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario</a>
+                    </h4>
+                    <span style="color: #000000; font-weight:bold;">
+                       WWW'19 Demo</span>
+                    <div class="fig-caption">
+                        <span style="color: #87AFC7; font-weight:bold;">
+                            Highlight: </span> Simulator
+                        <span style="color: #87AFC7;"><br>
+                            [<a href="https://github.com/cityflow-project/CityFlow">code</a>]
+                            [<a href="https://cityflow-project.github.io/">demo</a>]
+                        </span>
+                        <br>
+                         CityFlow is an smilator which can support flexible definitions for road network and traffic flow based on synthetic and real-world data. It also provides user-friendly interface for reinforcement learning. Most importantly, CityFlow is more than twenty times faster than SUMO and is capable of supporting city-wide traffic simulation with an interactive render for monitoring. Besides traffic signal control, CityFlow could serve as the base for other transportation studies and can create new possibilities to test machine learning methods in the intelligent transportation domain.
+                    </div>
+                    <hr class="hrPost">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </div>
+            
+            
+            
+    </div><!-- row -->
+</div>
+
+<!--
 <table>
   <thead>
   <tr>
@@ -521,7 +780,7 @@
   <td style="text-align: left">MetaLight: Value-based Meta-reinforcement Learning for Online Universal Traffic Signal Control</td>
   <td style="text-align: left">AAAI&#39;2020</td>
   <td style="text-align: center">Meta learning for universal traffic signal control</td>
-  <td style="text-align: center">-</td>
+  <td style="text-align: center"><a href="https://github.com/zxsRambo/metalight">Code</a></td>
   <td style="text-align: center">-</td>
   <td style="text-align: center">-</td>
   </tr>
@@ -554,7 +813,8 @@
   </tr>
   </tbody>
 </table>
-    
+
+-->
 <!-- <header class="masthead d-flex">
     <div class="container text-center my-auto">
           <div class="col-lg-12 mx-auto">
