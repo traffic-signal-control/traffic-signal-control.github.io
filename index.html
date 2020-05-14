@@ -291,16 +291,22 @@
     border-radius: 3px; }
 
   pre {
-    background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    padding: 6px 10px;
-    border-radius: 3px; }
+      display: block;
+      padding: 9.5px;
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 1.42857143;
+      color: #333;
+      word-break: break-all;
+      word-wrap: break-word;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
     pre code, pre tt {
       background-color: transparent;
-      border: none; }
+      border: none;
+    }
 
   sup {
       font-size: 0.83em;
@@ -343,105 +349,6 @@
 
 <body id="page-top", style="
     width: 1000px;">
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Reinforcement Learning for Traffic Signal Control</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="dataset.html">Dataset</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="survey.html">Survey</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="code.html">Source code</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="https://cityflow-project.github.io">Simulator</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#results">Results</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#news">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
-              </li>
-          </ul>
-      </div>
-    </div>
-  </nav> -->
-
-   <!--  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h2 class="mb-5">Resources</h2>
-      </div>
-      <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <a href="dataset.html">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="icon-docs"></i>
-              </span>
-          </a>
-          <h4>
-            <strong><font>Dataset</font></strong>
-          </h4>
-          <p class="text-faded mb-0">Benckmarking datasets including road networks and traffic flow.</p>
-        </div>
-          
-        <div class="col-lg-3 col-md-6">
-            <a href="/survey.html">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="icon-briefcase"></i>
-              </span>
-            </a>
-          <h4>
-            <strong><font>Survey</font></strong>
-          </h4>
-          <p class="text-faded mb-0">Introducing the traffic signal control methods in a comprehensive way.</p>
-        </div>
-          
-          
-        <div class="col-lg-3 col-md-6">
-            <a href="/method.html">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="icon-cloud-download"></i>
-              </span>
-            </a>
-          <h4>
-            <strong><font>Source code</font></strong>
-          </h4>
-          <p class="text-faded mb-0">Download source codes of traffic signal control methods.</p>
-        </div>
-          
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="https://cityflow-project.github.io">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <i class="icon-screen-smartphone"></i>
-              </span>
-            </a>
-          <h4>
-            <strong>Simulator</strong>
-          </h4>
-          <p class="text-faded mb-0">Supporting multi-process, large-scale simulation</p>
-            
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 <section class="content-section " id="methods" style="
     padding-top: 20px;
@@ -449,9 +356,9 @@
     <div class="container">
         <div class="content-section-heading text-center ">
             <h2 class="mb-5">Reinforcement Learning for Traffic Signal Control</h2>
-             <!-- <h5 class="mb-5"></h5> -->
         </div>
     </div>
+</section>
 
 
 <p>The aim of this website is to offering comprehensive <strong>dataset</strong>, <strong>simulator</strong>, relevant <strong>papers</strong> and <strong>survey</strong> to anyone who may wish to start investigation or evaluate a new algorithm.</p>
@@ -903,31 +810,13 @@
 -->
 
     <!-- Header -->
-<section class="content-section " id="methods" style="
+<section class="content-section " id="datasets" style="
     padding-top: 20px;
 ">
-  
-
-
-    <!-- Team Member 2 -->
-    <!-- <section class="content-section " id="methods"> -->
-  
-
-
-    <!-- Team Member 2 -->
-
-<h2 id="open-datasets">Open Datasets</h2>
-
-  <p>We provide different traffic datasets, each includes both road network (roadnet.json) and traffic flow file (flow.json), whose formats are defined in <a href="https://cityflow.readthedocs.io/en/latest/roadnet.html">Roadnet File Format</a> and <a href="https://cityflow.readthedocs.io/en/latest/flow.html">Flow File Format</a> respectively.</p>
-
-   <section class="content-section " id="datasets" ,style="
-      padding-bottom: 20px;
-  " style="
-    padding-bottom: 20px;
-    padding-top: 20px;
-"><p></p>
-
-  <div class="container">
+    <h2 id="open-datasets">Open Datasets</h2>
+    <p>We provide different traffic datasets, each includes both road network (roadnet.json) and traffic flow file (flow.json), whose formats are defined in <a href="https://cityflow.readthedocs.io/en/latest/roadnet.html">Roadnet File Format</a> and <a href="https://cityflow.readthedocs.io/en/latest/flow.html">Flow File Format</a> respectively.</p>
+    <p></p>
+    <div class="container">
    
   <div class="caption-content">
 
@@ -1439,7 +1328,30 @@ href="https://github.com/traffic-signal-control/sample-code/tree/master/data/atl
   <p>
        </div>
 
-  <p></section>
+    <p>If you use the datasets in your paper, please cite whe following papers:</p>
+    <pre>@article{wei2019survey,
+      title={A Survey on Traffic Signal Control Methods},
+      author={Wei, Hua and Zheng, Guanjie and Gayah, Vikash and Li, Zhenhui},
+      journal={arXiv preprint arXiv:1904.08117},
+      year={2019}
+    }
+    </pre>
+    <pre>@inproceedings{wei2019colight,
+      title={Colight: Learning network-level cooperation for traffic signal control},
+      author={Wei, Hua and Xu, Nan and Zhang, Huichu and Zheng, Guanjie and Zang, Xinshi and Chen, Chacha and Zhang, Weinan and Zhu, Yanmin and Xu, Kai and Li, Zhenhui},
+      booktitle={Proceedings of the 28th ACM International Conference on Information and Knowledge Management},
+      pages={1913--1922},
+      year={2019}
+    }
+    </pre>
+    <pre>@inproceedings{zheng2019frap,
+      title={Learning phase competition for traffic signal control},
+      author={Zheng, Guanjie and Xiong, Yuanhao and Zang, Xinshi and Feng, Jie and Wei, Hua and Zhang, Huichu and Li, Yong and Xu, Kai and Li, Zhenhui},
+      booktitle={Proceedings of the 28th ACM International Conference on Information and Knowledge Management},
+      pages={1963--1972},
+      year={2019}
+    }</pre>
+</section>
 
 
 <h2 id="survey">Survey</h2>
@@ -1448,7 +1360,7 @@ href="https://github.com/traffic-signal-control/sample-code/tree/master/data/atl
     <img src="img/survey-structure.png" class="card-img-top" alt="...">
 
 
-<section class="content-section " id="methods" style="
+<section class="content-section " id="team" style="
     padding-top: 20px;
 ">
     <div class="container">
@@ -1457,166 +1369,148 @@ href="https://github.com/traffic-signal-control/sample-code/tree/master/data/atl
         </div>
     </div>
 
-<!-- Page Content -->
-<div class="container">
-    
-  <div class="row">
-    <!-- Header -->
-    <div class="col-xl-12 col-md-6 mb-5">
-      <div class="card border-0">
-        <div class="card-body text-center">
-          <h3 class="card-title mb-0">Faculty Members</h3>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Page Content -->
+    <div class="container">
 
-  <div class="row">
-    <!-- Team Member 1 -->
-    <div class="col-xl-4 col-md-6 mb-5">
-      <div class="card border-0">
-        <div class="card-body text-center">
+        <div class="row">
+        <!-- Header -->
+        <div class="col-xl-12 col-md-6 mb-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-0">Faculty Members</h3>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Team Member 1 -->
-    <div class="col-xl-4 col-md-6 mb-5">
-      <div class="card border-0">
-          <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">
-        <img src="img/jessie-li.png" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-            <h5 class="card-title mb-0">Zhenhui (Jessie) Li</h5>
-          <div class="card-text text-black-50">Penn State</div>
+        <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-xl-4 col-md-6 mb-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+            </div>
+          </div>
         </div>
-        </a>
-      </div>
-    </div>
-    <!-- Team Member 1 -->
-    <div class="col-xl-4 col-md-6 mb-5">
-      <div class="card border-0">
-        <div class="card-body text-center">
+        <!-- Team Member 1 -->
+        <div class="col-xl-4 col-md-6 mb-5">
+          <div class="card border-0">
+              <a href="https://faculty.ist.psu.edu/jessieli/Site/index.html">
+            <img src="img/jessie-li.png" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title mb-0">Zhenhui (Jessie) Li</h5>
+              <div class="card-text text-black-50">Penn State</div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!-- Team Member 1 -->
+        <div class="col-xl-4 col-md-6 mb-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <!-- Header -->
+        <div class="col-xl-12 col-md-6 mb-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-0">Student Members</h3>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    
-  <div class="row">
-    <!-- Header -->
-    <div class="col-xl-12 col-md-6 mb-5">
-      <div class="card border-0">
-        <div class="card-body text-center">
-          <h3 class="card-title mb-0">Student Members</h3>
+
+      <div class="row">
+        <!-- Team Member 2 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+              <a href="http://personal.psu.edu/hzw77/">
+                  <div class="card border-0 shadow">
+            <!--        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">-->
+                    <div class="card-body text-center">
+                      <h5 class="card-title mb-0">Hua Wei</h5>
+                      <div class="card-text text-black-50">PhD, Penn State</div>
+                    </div>
+                  </div>
+            </a>
         </div>
-      </div>
-    </div>
-  </div>
-    
-  <div class="row">
-    <!-- Team Member 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-          <a href="http://personal.psu.edu/hzw77/">
+        <!-- Team Member 3 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="http://personal.psu.edu/~gjz5038/">
               <div class="card border-0 shadow">
-        <!--        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">-->
                 <div class="card-body text-center">
-                  <h5 class="card-title mb-0">Hua Wei</h5>
+                  <h5 class="card-title mb-0">Guanjie Zheng</h5>
                   <div class="card-text text-black-50">PhD, Penn State</div>
                 </div>
               </div>
-        </a>
-    </div>
-    <!-- Team Member 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="http://personal.psu.edu/~gjz5038/">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Guanjie Zheng</h5>
-              <div class="card-text text-black-50">PhD, Penn State</div>
-            </div>
-          </div>
-        </a>
-    </div>
-      <!-- Team Member 5 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="https://chacha-chen.github.io/">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Chacha Chen</h5>
-              <div class="card-text text-black-50">PhD, Penn State</div>
-            </div>
-          </div>
-        </a>
-    </div>  
-     <!-- Team Member 4 -->
-    
+            </a>
+        </div>
+          <!-- Team Member 5 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="https://chacha-chen.github.io/">
+              <div class="card border-0 shadow">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Chacha Chen</h5>
+                  <div class="card-text text-black-50">PhD, Penn State</div>
+                </div>
+              </div>
+            </a>
+        </div>
+         <!-- Team Member 4 -->
 
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="http://zang-xs.com">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Xinshi Zang</h5>
-              <div class="card-text text-black-50">Bachelor, Shanghai Jiao Tong University</div>
-            </div>
-          </div>
-      </a>
-    </div>
-     
-    <!-- Team Member 6 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="https://xyh97.github.io/">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Yuanhao Xiong</h5>
-              <div class="card-text text-black-50">PhD, University of California, Los Angelos</div>
-            </div>
-          </div>
-        </a>
-    </div>
-    <!-- Team Member 7 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="https://sites.google.com/site/xunannancy/">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Nan Xu</h5>
-              <div class="card-text text-black-50">PhD, University of Southern California</div>
-            </div>
-          </div>
-        </a>
-    </div>
-    <!-- Team Member 7 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <a href="http://apex.sjtu.edu.cn/members/zhc@apexlab.org">
-          <div class="card border-0 shadow">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">Huichu Zhang</h5>
-              <div class="card-text text-black-50">PhD, Shanghai Jiao Tong University</div>
-            </div>
-          </div>
-        </a>
-    </div>
-      
-  </div>
-  <!-- /.row -->
 
-</div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="http://zang-xs.com">
+              <div class="card border-0 shadow">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Xinshi Zang</h5>
+                  <div class="card-text text-black-50">Bachelor, Shanghai Jiao Tong University</div>
+                </div>
+              </div>
+          </a>
+        </div>
+
+        <!-- Team Member 6 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="https://xyh97.github.io/">
+              <div class="card border-0 shadow">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Yuanhao Xiong</h5>
+                  <div class="card-text text-black-50">PhD, University of California, Los Angelos</div>
+                </div>
+              </div>
+            </a>
+        </div>
+        <!-- Team Member 7 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="https://sites.google.com/site/xunannancy/">
+              <div class="card border-0 shadow">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Nan Xu</h5>
+                  <div class="card-text text-black-50">PhD, University of Southern California</div>
+                </div>
+              </div>
+            </a>
+        </div>
+        <!-- Team Member 7 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="http://apex.sjtu.edu.cn/members/zhc@apexlab.org">
+              <div class="card border-0 shadow">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">Huichu Zhang</h5>
+                  <div class="card-text text-black-50">PhD, Shanghai Jiao Tong University</div>
+                </div>
+              </div>
+            </a>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    </div>
 </section>
 
-    
-  <!-- Call to Action -->
-<!--
-  <section class="content-section ">
-    
-  </section>
--->
-
-  <!-- Map -->
-<!--
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section>
--->
 
   <!-- Footer -->
   <footer id="contact" class="footer text-center" style="
