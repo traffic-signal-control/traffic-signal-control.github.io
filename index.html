@@ -429,6 +429,7 @@
         <a href="javascript:showContentWithType('objective');">How to design reward?</a><span>/</span>
         <a href="javascript:showContentWithType('learning');">How to learn faster?</a><span>/</span>
         <a href="javascript:showContentWithType('simulation');">How to build a real simulator?</a><span></span>
+        <a href="javascript:showContentWithType('sim2real');">How to transfer from one environment to another?</a><span></span>
         <br>
         Control Scenarios:
         <a href="javascript:showContentWithType('single');">Single intersection</a><span>/</span>
@@ -440,6 +441,66 @@
     <div class="container w">
             <div class="row centered">
 
+        <div class="multiple sim2real publication">
+                    <table style="width: 100%;" class="noBorder">
+                        <tbody class="noBorder">
+                        <tr class="noBorder">
+                            <td style="width: 30%" class="noBorder">
+                                <div class="imgHolder"><img src="img/PromptGAT.png"></div>
+                            </td>
+                            <td style="width: 70%" class="noBorder">
+                                <h4 class="fig-title">
+                                    <a href="https://arxiv.org/abs/2308.14284">Prompt to Transfer: Sim-to-Real Transfer for Traffic Signal Control with Prompt Learning</a>
+                                </h4>
+                                <span style="color: #000000; font-weight:bold;">
+                           AAAI'24</span>
+
+                                <div class="fig-caption">
+                            <span style="color: #87AFC7; font-weight:bold;">
+                                Highlight: </span> Improving sim-to-real transfer performance with Large Language Models
+                                    <span style="color: #87AFC7;"><br>
+                                [<a href="https://github.com/DaRL-LibSignal/PromptGAT">code</a>]
+                            </span>
+                                    <br>
+                                    In this work, we leverage LLMs to understand and profile the system dynamics by a prompt-based grounded action transformation. Accepting the cloze prompt template, and then filling in the answer based on accessible context, the pre-trained LLM’s inference ability is exploited and applied to understand how weather conditions, traffic states, and road types influence traffic dynamics, being aware of this, the policies’ action is taken and grounded based on realistic dynamics, thus help the agent learn a more realistic policy.
+                                </div>
+                                <hr class="hrPost">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+        <div class="multiple sim2real publication">
+                    <table style="width: 100%;" class="noBorder">
+                        <tbody class="noBorder">
+                        <tr class="noBorder">
+                            <td style="width: 30%" class="noBorder">
+                                <div class="imgHolder"><img src="img/UGAT.png"></div>
+                            </td>
+                            <td style="width: 70%" class="noBorder">
+                                <h4 class="fig-title">
+                                    <a href="https://arxiv.org/abs/2307.12388">Uncertainty-aware Grounded Action Transformation towards Sim-to-Real Transfer for Traffic Signal Control</a>
+                                </h4>
+                                <span style="color: #000000; font-weight:bold;">
+                           CDC'23</span>
+
+                                <div class="fig-caption">
+                            <span style="color: #87AFC7; font-weight:bold;">
+                                Highlight: </span> Improving sim-to-real transfer performance with uncertainty quantification
+                                    <span style="color: #87AFC7;"><br>
+                                [<a href="https://github.com/DaRL-LibSignal/UGAT">code</a>]
+                            </span>
+                                    <br>
+                                    In this paper, we propose a simulation-to-real-world (simto-real) transfer approach called UGAT, which transfers a learned policy trained from a simulated environment to a realworld environment by dynamically transforming actions in the simulation with uncertainty to mitigate the domain gap of transition dynamics.
+                                </div>
+                                <hr class="hrPost">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
         <div class="multiple learning publication">
         <table style="width: 100%;" class="noBorder">
             <tbody class="noBorder">
@@ -482,7 +543,7 @@
                     </td>
                     <td style="width: 70%" class="noBorder">
                         <h4 class="fig-title">
-                            <a href="https://web.njit.edu/~hw32/posts/psu/cikm19.html">CoLight: Learning Network-level Cooperation for Traffic Signal Control</a>
+                            <a href="https://arxiv.org/pdf/1905.05717">CoLight: Learning Network-level Cooperation for Traffic Signal Control</a>
                         </h4>
                         <span style="color: #000000; font-weight:bold;">
                            CIKM'19</span>
@@ -514,7 +575,7 @@
                     </td>
                     <td style="width: 70%" class="noBorder">
                         <h4 class="fig-title">
-                           <a href="https://web.njit.edu/~hw32/posts/psu/kdd19.html">PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network</a>
+                           <a href="https://faculty.ist.psu.edu/jessieli/Publications/2019-KDD-presslight.pdf">PressLight: Learning Max Pressure Control to Coordinate Traffic Signals in Arterial Network</a>
                         </h4>
                         <span style="color: #000000; font-weight:bold;">
                            KDD'19</span>
@@ -690,6 +751,37 @@
             </tbody>
         </table>
         <br>
+        </div>
+
+        <div class="simulation publication">
+            <table style="width: 100%;" class="noBorder">
+                <tbody class="noBorder">
+                <tr class="noBorder">
+                    <td style="width: 30%" class="noBorder">
+                        <div class="imgHolder"><img src="img/cityflowER.png"></div>
+                    </td>
+                    <td style="width: 70%" class="noBorder">
+                        <h4 class="fig-title">
+                            <a href="https://arxiv.org/abs/2402.06127v1">CityFlowER: An Efficient and Realistic Traffic Simulator with Embedded Machine Learning Models</a>
+                        </h4>
+                        <span style="color: #000000; font-weight:bold;">
+                   ECML-PKDD'23 Demo</span>
+                        <div class="fig-caption">
+                    <span style="color: #87AFC7; font-weight:bold;">
+                        Highlight: </span> Simulator with loadable machine learning models
+                            <span style="color: #87AFC7;"><br>
+                        [<a href="https://github.com/cityflow-project/CityFlowER">code</a>]
+                        [<a href="https://youtu.be/B-aDfU5a4gA">demo</a>]
+                    </span>
+                            <br>
+                            CityFlowER is an extension over the existing CityFlow simulator, designed for efficient and realistic city-wide traffic simulation. CityFlowER pre-embeds ML models within the simulator, eliminating the need for external API interactions and enabling faster data computation.
+                        </div>
+                        <hr class="hrPost">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
         </div>
 
         <div class="simulation publication">
